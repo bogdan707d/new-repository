@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stil.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<br><br><br><p style="color:#FE5000;";>Bogdan Marius DASCAL</p>
+<a href="mailto:mariusdascal@yahoo.com target="_blank"><h1>mariusdascal@yahoo.com</h1></a>
+<br><br><br><table align="right">
+<h2><ins>Specificatii tehnice ale statiei principale de lucru</ins></h2>
+  <tr>
+    <th>Denumire completa</th>
+    <th>Producator</th>
+    <th>Parametri</th>
+  </tr>
+  <tr>
+    <td>NVIDIA GeForce 820</td>
+    <td>NVIDIA</td>
+    <td>1800MHz</td>
+  </tr>
+  <tr>
+    <td>Intel core i5 4200U</td>
+    <td>INTEL</td>
+    <td>2.4GHz</td>
+  </tr>
+  <tr>
+    <td>SSD Evo 750 500GB</td>
+    <td>SAMSUNG</td>
+    <td>560MB/s speed</td>
+  </tr>
+  <tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="relative"><h3><ins>Structura retelei personale si accesul la internet</ins></h3>
+<img src="diagrama2.jpg" alt="diagrama" class="center">
+  <div class="absolute"><h4><ins>Caracteristicile conexiunii la retea;</ins></h4></div>
+  <div class="lista">
+  <ol class="x">
+  
+  <li>MAC 3e:ab:9e:bc:31:75</li>
+  <li>IP 192.168.0.234</li>
+  <li>Debit la download 89MB/S</li>
+  <li>Debit la upload 36MB/s</li>
+</ol></div>
+</div>
+<div class="poze">
+<h6 id="schimbare" ondblclick="functie()"><ins>Monitorizarea resurselor</ins></h6>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="ss1.png" style="width:100%">
+  <div class="text">Monitorizare resurse</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="ss2.png" style="width:100%">
+  <div class="text">Monitorizare resurse</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="ss3.png" style="width:100%">
+  <div class="text">Monitorizare resurse</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 3</div>
+  <img src="ss4.png" style="width:100%">
+  <div class="text">Monitorizare resurse</div>
+</div>
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<br>
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+function myFunction(element, color) {
+  element.style.color = color;
+}
+
+function functie() {
+  document.getElementById("schimbare").innerHTML = "Slideshow a fost inlocuit";
+  getElementsByClassName("showSlides").innerHTML;
+}
+</script>
+
+</body>
+
+<h5><ins>Utilizarea resurselor</ins></h5>
+</html>
